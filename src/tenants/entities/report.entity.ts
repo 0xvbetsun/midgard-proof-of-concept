@@ -20,10 +20,10 @@ export class Report {
   name: string;
 
   @Column('date', { name: 'from_date', nullable: true })
-  fromDate: string;
+  fromDate: Date | null;
 
   @Column('date', { name: 'to_date', nullable: true })
-  toDate: string;
+  toDate: Date | null;
 
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;

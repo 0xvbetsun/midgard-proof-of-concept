@@ -1,6 +1,6 @@
 import { Resolver, Query } from '@nestjs/graphql';
-import { Tenant } from './entities';
-import { TenantsService } from './tenants.service';
+import { Tenant } from '../entities';
+import { TenantsService } from '../services';
 
 @Resolver(() => Tenant)
 export class TenantsResolver {
